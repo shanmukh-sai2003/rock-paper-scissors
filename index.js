@@ -43,15 +43,14 @@ function playRound(userChoice, computerChoice) {
 }
 
 function getUserChoice() {
-    let choice = prompt("Enter your choice:");
+    let choice = "rock";
     return choice.toLowerCase();
 }
-
 
 function game() {
     let userScore = 0;
     let computerScore = 0;
-    for(let i = 0; i < 5; i++) {
+    while (userScore < 5 && computerScore < 5) {
         let roundScore = playRound(getUserChoice(), getComputerChoice());
         if(roundScore === 1) {
             userScore++;
