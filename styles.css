@@ -8,10 +8,26 @@
 
 body {
     text-align: center;
+    font-family: 'Roboto';
+    background-color: #FBF9F1;
 }
 
 header {
     padding: 20px 0px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.winner-specifier {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.round-description {
+    font-weight: 500;
+    font-size: 1.5rem;
 }
 
 .score-card {
@@ -34,14 +50,18 @@ header {
 }
 
 .user-options .option img{
-    height: 200px;
+    height: 150px;
 }
 
 .user-options .option {
     padding: 20px;
     cursor: pointer;
     border-radius: 12px;
-    background-color: white;
+    background-color: #92C7CF;
+}
+
+.user-options .option:hover {
+    background-color: #AAD7D9;
 }
 
 .game-declartion {
@@ -51,11 +71,28 @@ header {
     justify-content: center;
     align-items: center;
     position: absolute;
+    background-color: rgba(251, 249, 241, 0.6);
     visibility: hidden;
 }
 
 .game-declartion-card {
-    background-color: white;
+    background-color: #92C7CF;
     padding: 30px;
     border-radius: 12px;
+    position: absolute;
+    z-index: 2;
+}
+
+.game-message {
+    font-size: 2rem;
+}
+
+.play-again-btn {
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    background-color: #FBF9F1;
+    cursor: pointer;
 }
