@@ -21,6 +21,11 @@ header {
     margin: 30px 0px;
 }
 
+.score-card .choice-img {
+    height: 100px;
+    padding: 15px;
+}
+
 .user-options {
     display: flex;
     justify-content: center;
@@ -35,7 +40,22 @@ header {
 .user-options .option {
     padding: 20px;
     cursor: pointer;
-    /* border: 2px solid black; */
     border-radius: 12px;
     background-color: white;
+}
+
+.game-declartion {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    visibility: hidden;
+}
+
+.game-declartion-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
 }
